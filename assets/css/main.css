@@ -68,6 +68,7 @@ a {
   padding: 0px 70px;
   padding-block-start: 30px;
   padding-block-end: 30px;
+  min-height: 100vh;
 }
 
 /* header Content Class */
@@ -537,6 +538,7 @@ footer a {
 @media (width <= 600px) {
   .content {
     padding: 30px 20px;
+    padding-bottom: 90px;
   }
 
   .lotsList {
