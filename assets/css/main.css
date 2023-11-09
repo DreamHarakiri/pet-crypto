@@ -56,6 +56,7 @@ a {
 
 .accontBtn {
   position: absolute;
+  margin-block-start: 20px;
   bottom: 0px;
 }
 
@@ -119,6 +120,10 @@ a {
   border-radius: 112.5px;
   background-color: var(--accentColor);
 }
+
+.controllList a {
+  color: var(--perfectColor);
+}
 /* bannerContent */
 
 .bannerContent {
@@ -128,8 +133,8 @@ a {
 }
 
 .defaultSettingBlock {
-  width: 49%;
-  height: 228px;
+  width: 100%;
+  height: 328px;
   background-color: var(--backgroundMenu);
   border-radius: 20px;
   background-position: center;
@@ -152,12 +157,12 @@ a {
 }
 
 .backgroundBannerBlock h1 {
-  max-width: 330px;
+  max-width: 550px;
 
-  color: var(--backgroundMenu);
+  color: var(--whiteColor);
 
   font-family: Roboto, sans-serif;
-  font-size: 26px;
+  font-size: clamp(1.625rem, 1.598rem + 1.1683vw, 3rem);
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -167,11 +172,11 @@ a {
 }
 
 .backgroundBannerBlock p {
-  color: var(--backgroundMenu);
+  color: var(--whiteColor);
   margin-block-start: 10px;
   margin-inline-start: 30px;
   font-family: Roboto, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -185,11 +190,11 @@ a {
 }
 
 .bannerBtn button {
-  width: 133px;
-  height: 40px;
+  width: 160px;
+  height: 50px;
   border: none;
   border-radius: 9px;
-  color: var(--backgroundMenu);
+  color: var(--whiteColor);
 
   text-align: center;
   font-family: Roboto, sans-serif;
@@ -209,8 +214,6 @@ a {
 }
 
 .defaultSettingBlock:last-child {
-  padding: 20px;
-
   display: flex;
   gap: 20px;
 }
@@ -239,21 +242,13 @@ a {
   align-items: center;
 }
 
-.containerHeaderBanner p {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  font-family: Roboto, sans-serif;
-}
-
 .nameLots {
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   font-family: Roboto, sans-serif;
-  color: var(--mainColor);
+  color: var(--perfectColor);
 
   margin-block-start: 15px;
 }
@@ -264,7 +259,7 @@ a {
   font-weight: 400;
   line-height: normal;
   font-family: Roboto, sans-serif;
-  color: var(--mainColor);
+  color: var(--perfectColor);
   margin-block-start: 10px;
 }
 
@@ -284,13 +279,19 @@ a {
   margin-block-start: 5px;
 }
 
+.bannerBtnCard {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .bannerBtnCard button {
-  width: 133px;
+  max-width: 133px;
+  width: 100%;
   margin-block-start: 16px;
   height: 40px;
   border: none;
   border-radius: 9px;
-  color: var(--backgroundMenu);
+  color: var(--whiteColor);
   text-align: center;
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -313,7 +314,7 @@ a {
 
 .mainContent {
   margin-block-start: 70px;
-  color: var(--mainColor);
+  color: var(--perfectColor);
   font-family: Roboto, sans-serif;
 }
 
@@ -334,7 +335,7 @@ a {
 
 .sortList__setting {
   padding: 3px 13px;
-  color: var(--mainColor);
+  color: var(--perfectColor);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -344,22 +345,23 @@ a {
 .sortList__active {
   background-color: var(--accentColor);
   border-radius: 14px;
-  color: var(--backgroundMenu);
+  color: var(--whiteColor);
 }
 
 .lotsList {
   margin-block-start: 35px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(262px, 262px));
-  grid-template-rows: repeat(auto-fill, minmax(433px, 433px));
-  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 282px));
+  grid-template-rows: repeat(auto-fill, max(433px));
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
   justify-content: center;
 }
 
 .lotBlock {
   background-color: var(--backgroundMenu);
-  width: 262px;
-
+  max-width: 282px;
+  width: 100%;
   border-radius: 18px;
   padding: 20px;
 }
@@ -417,7 +419,7 @@ a {
   background-color: var(--accentColor);
   border: none;
 
-  color: var(--backgroundMenu);
+  color: var(--whiteColor);
 
   text-align: center;
   font-family: Roboto, sans-serif;
@@ -433,6 +435,7 @@ footer {
   text-align: center;
   font-family: Roboto, sans-serif;
   font-weight: 400;
+  color: var(--perfectColor);
 }
 
 footer a {

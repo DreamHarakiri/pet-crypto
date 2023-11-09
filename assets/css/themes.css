@@ -1,0 +1,67 @@
+:root.theme-dark {
+  --backgroundMenu: #1d1932;
+  --backgroundContent: #131129;
+
+  --accentColor: #6f4ff2;
+  --activePage: #6f4ff2;
+  --disablePage: #65646a;
+  --mainColor: #000;
+
+  --redColor: #dc3546;
+  --priceColor: #6c7aa0;
+
+  --whiteColor: #fff;
+  --hoverColor: white;
+
+  --perfectColor: #fff;
+}
+:root.theme-light {
+  --whiteColor: #fff;
+
+  --backgroundMenu: #fff;
+  --backgroundContent: #f2f2f2;
+
+  --accentColor: #6f4ff2;
+  --activePage: #6f4ff2;
+  --disablePage: #65646a;
+  --mainColor: #000;
+  --hoverColor: #65646a;
+
+  --redColor: #dc3546;
+  --priceColor: #6c7aa0;
+
+  --perfectColor: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --backgroundMenu: #1d1932;
+    --backgroundContent: #131129;
+
+    --accentColor: #6f4ff2;
+    --activePage: #6f4ff2;
+    --disablePage: #65646a;
+    --mainColor: #000;
+
+    --redColor: #dc3546;
+    --priceColor: #6c7aa0;
+
+    --whiteColor: #fff;
+
+    --perfectColor: #fff;
+  }
+
+  .contentMenu a {
+    transition: 1s;
+  }
+
+  .contentMenu a:hover {
+    color: var(--hoverColor);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .contentMenu a:hover {
+    color: var(--hoverColor);
+  }
+}
