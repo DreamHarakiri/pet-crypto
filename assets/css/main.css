@@ -512,4 +512,34 @@ footer a {
   .content {
     margin-inline-start: 0;
   }
+
+  .headerContent {
+    max-width: 100%;
+    gap: 20px;
+  }
+
+  .lotsList {
+    grid-template-columns: repeat(auto-fill, minmax(176px, 277px));
+  }
+
+  .backgroundBannerBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 30px;
+  }
+
+  .backgroundBannerBlock h1 {
+    padding-top: 0;
+  }
+}
+
+@media (width <= 600px) {
+  .content {
+    padding: 30px 20px;
+  }
+
+  .lotsList {
+    grid-template-columns: repeat(auto-fill, minmax(176px, 265px));
+  }
 }
