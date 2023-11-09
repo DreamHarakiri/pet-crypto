@@ -51,17 +51,20 @@
     --perfectColor: #fff;
   }
 
-  .contentMenu a {
+  .contentMenu a,
+  .accontBtn a {
     transition: 1s;
   }
 
-  .contentMenu a:hover {
+  .contentMenu a:hover,
+  .accontBtn a:hover {
     color: var(--hoverColor);
   }
 }
 
 @media (prefers-color-scheme: light) {
-  .contentMenu a:hover {
+  .contentMenu a:hover,
+  .accontBtn a:hover {
     color: var(--hoverColor);
   }
 }
